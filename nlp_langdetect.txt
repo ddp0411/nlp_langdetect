@@ -1,0 +1,19 @@
+Language detection and translation in NLP
+1] Install google translator:(paste the below code in your terminal)
+    pip install google_trans_translator
+2] Install language detector:(paste the below code in your terminal)
+    pip install langdetect
+
+
+This code defines a function called detect_and_translate that takes two arguments: text (a string representing the text to be translated) and target_lang (a string representing the target language for translation).
+
+Within the function:
+
+1] It uses the detect function from the langdetect library to determine the language of the input text.
+2] If the detected language matches the target language, it returns the input text without translation.
+3] If the detected language is different from the target language, it initializes a translator object from the google_translator library and translates the input text 
+   from the detected language to the target language.
+4] It returns the translated text.
+After defining the function, the code provides a sample sentence and calls the detect_and_translate function with this sentence and the target language 
+set to 'sw' (which typically represents Swahili). 
+The function detects the language of the sentence, translates it into Swahili (if necessary), and prints the translated text.
